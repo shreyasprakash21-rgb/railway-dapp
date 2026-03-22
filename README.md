@@ -15,8 +15,6 @@ A decentralized railway ticket booking system built with **HTML, CSS, JavaScript
 - [How to Use](#how-to-use)
 - [51% Attack Simulation](#51-attack-simulation)
 - [Screenshots](#screenshots)
-- [License](#license)
-
 ---
 
 ## 📖 About the Project
@@ -98,7 +96,7 @@ railconnect/
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/your-username/railconnect.git
+   git clone https://github.com/shreyasprakash21-rgb/railconnect.git
    cd railconnect
    ```
 
@@ -157,11 +155,6 @@ This project includes an **educational feature** to simulate a 51% attack scenar
 
 ---
 
-## 📜 License
-
-This project is licensed under the **MIT License** — feel free to use, modify, and distribute it.
-
----
 
 ## 🤝 Contributing
 

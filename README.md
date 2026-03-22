@@ -170,7 +170,4 @@ Pull requests are welcome! For major changes, please open an issue first to disc
 ---
 for any queries contact shreyasprakash21@gmail.com
 
-## 📬 Contact
 
-Built with ❤️ by [Your Name](https://github.com/your-username)  
-For questions or feedback, open an issue or reach out via GitHub.

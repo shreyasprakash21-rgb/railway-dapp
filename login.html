@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - Railway Booking DApp</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background: linear-gradient(to right, #2c3e50, #033a46);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login-container {
+      background: white;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 30px;
+      color: #07316b;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      margin: 15px 0;
+      border: 2px solid #042655;
+      border-radius: 10px;
+      font-size: 16px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #082854;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #01162b;
+    }
+
+    .error {
+      color: red;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login to Railway Connect</h2>
+    <input type="text" id="wallet" placeholder="Enter your Wallet Address" />
+    <div class="error" id="error"></div>
+    <button onclick="login()">Login</button>
+  </div>
+
+  <script>
+    function login() {
+      const wallet = document.getElementById("wallet").value.trim();
+      const errorDiv = document.getElementById("error");
+
+      if (!wallet || !/^0x[a-fA-F0-9]{40}$/.test(wallet)) {
+        errorDiv.textContent = "Please enter a valid Ethereum wallet address.";
+        return;
+      }
+
+      // Save to localStorage
+      localStorage.setItem("walletAddress", wallet);
+      window.location.href = "index.html";
+    }
+  </script>
+</body>
+</html>
